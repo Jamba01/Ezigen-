@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jamba Uradalom Dicső Története</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Georgia', serif;
+      background-size: cover;
+      background-color: black;
+      color: #e1c699;
+      text-shadow: 0 0 10px #000, 0 0 5px #fff;
+      display: flex; /* Flexbox elrendezés */
+      justify-content: center; /* Középre igazítás vízszintesen */
+      align-items: center; /* Középre igazítás függőlegesen */
+      min-height: 100vh; /* Képernyő teljes magassága */
+      overflow-y: auto; /* Görgetés engedélyezése */
+      box-sizing: border-box; /* Padding figyelembe vétele */
+      flex-direction: column; /* Alapértelmezett elrendezés */
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 4em;
+      margin-top: 20px;
+      text-shadow: 0 0 15px #ffd700, 0 0 30px #ffb800;
+      animation: flicker 2s infinite alternate;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px #ffd700, 0 0 10px #ff8000;
+    }
+
+    .section {
+      display: none;
+      padding: 3em;
+      text-align: center;
+      max-width: 800px;
+      margin: 30px auto;
+      background: rgba(0, 0, 0, 0.8);
+      border: 3px solid #ffd700;
+      border-radius: 15px;
+      box-shadow: 0 0 30px #ffd700;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    .active {
+      display: block;
+    }
+
+    .button {
+      display: block;
+      margin: 2em auto;
+      padding: 1em 2em;
+      background: #9b870c;
+      color: white;
+      font-size: 1.5em;
+      border: 2px solid #fff;
+      border-radius: 15px;
+      cursor: pointer;
+      animation: pulse 1.5s infinite;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .end-message {
+      font-size: 2em;
+      color: #ffd700;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes flicker {
+      0%, 100% { text-shadow: 0 0 15px #ffd700; }
+      50% { text-shadow: 0 0 25px #ff8000; }
+    }
+
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 10px #ffd700; }
+      50% { box-shadow: 0 0 30px #ffb800; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Jamba Uradalom Dicső Története</h1>
+  
+  <div id="section1" class="section active">
+    <h2>A Nagy Kezdet</h2>
+    <p>Jamba olyan házban született, ahol több volt a patkány, mint a kenyér. Minden reggel éhes volt, és a ház falai között egy marék rohadék geci patkány szaladgált. A kis Jamba sosem panaszkodott, mert tudta, hogy a világban csak a túlélés számít. A kunyhó mögött egy régi, büdös lovarda húzódott, ahol a lovak annyira büdöset fingtak, hogy még a királyság másik felén lakók is bekönnyeztek.</p>
+  </div>
+
+  <div id="section2" class="section">
+    <h2>Az Ifjú Hős</h2>
+    <p>Jamba, bár ilyen körülmények között nőtt fel, mindig keményen edzett. Minden reggel, mikor a büdös lovak riherongy módjára káromkodtak a szomszédságban, Jamba csak egyet mondott: "Itt az ideje, hogy megverjem a világot!" És úgy is tett! Edzései során olyat emelt, mint egy igazi király, és bár a hülye medvék próbálták megakadályozni, mindig elmondta nekik: "Neked nincs elég agyad ahhoz, hogy engem megállíts!"</p>
+  </div>
+
+  <div id="section3" class="section">
+    <h2>A Királyi Küzdelem</h2>
+    <p>Amikor Jamba felkészült, hogy megverje a régi zsarnok királyt, mindenki tudta, hogy ez nem lesz könnyű. De Jamba nem félt, mert tudta, hogy a saját ereje elég ahhoz, hogy akár a legbüdösebb fingot is felülmúlja. A harc hatalmas volt. A király lova, egy gyönyörű, arany színű ló, de olyan dögös volt, hogy az egész palota megremegett tőle! Jamba pedig csak nevetett és azt mondta: "Ez a ló jobb, mint bármelyik hülye medve!"</p>
+  </div>
+
+  <div id="section4" class="section">
+    <h2>Jamba Koronázása</h2>
+    <p>Miután a zsarnok királyt végül legyőzte, Jamba úgy döntött, hogy koronát húz. A tömeg lelkesen üdvözölte őt, és mindenki tudta, hogy a birodalom egy új, erős uralkodóra talált. "Bazdmeg, mostantól én vagyok a király, és aki velem szembe száll, annak élete legrosszabb napja lesz!" – mondta Jamba, miközben felvette a koronát, és elindult megverni mindenkit, aki megpróbálta volna megállítani őt.</p>
+  </div>
+
+  <div id="section5" class="section">
+    <h2>A Nagy Szövetség</h2>
+    <p>Jamba nemcsak a csatatéren volt erős, hanem a diplomáciában is. Amikor Sági The Wise-ot meglátta, tudta, hogy itt valami komoly dolog kezdődik. "Szövetséget kötünk, és nem engedjük, hogy bárki is megfosszon minket a győzelemtől!" – mondta Jamba, miközben Sági bólogatott, és elmondta: "Mi nem leszünk olyan hülye medvék, mint az ellenség." A két hatalom örökre szövetséget kötött, és Jamba birodalmát soha többé nem fenyegethette veszély.</p>
+  </div>
+
+  <div id="section6" class="section">
+    <h2>Jamba Uradalma</h2>
+    <p>Jamba uralma alatt a birodalom virágzott. Mindenki tisztelte és félelmet érzett iránta. Egyedül a hülye medvék próbálták meg zavarni a rendet, de Jamba mindig egy szót mondott nekik: "Takarodj, te idióta medve!" És soha többé nem látták őket. A királyi palota szép, díszes lett, és mindenhol boldogság és bőség honolt.</p>
+  </div>
+
+  <button id="nextButton" class="button" onclick="nextSection()">Tovább a Történetben</button>
+  <div id="endMessage" class="hidden end-message">Itt a vége, fuss el Kuma!</div>
+
+  <script>
+    let currentSection = 1;
+
+    function nextSection() {
+      document.getElementById('section' + currentSection).classList.remove('active');
+      currentSection++;
+      if (currentSection <= 6) {
+        document.getElementById('section' + currentSection).classList.add('active');
+      } else {
+        document.getElementById('nextButton').classList.add('hidden');
+        document.getElementById('endMessage').classList.remove('hidden');
+      }
+    }
+  </script>
+</body>
+</html>
